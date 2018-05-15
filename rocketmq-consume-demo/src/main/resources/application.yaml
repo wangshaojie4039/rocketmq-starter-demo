@@ -1,0 +1,9 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: rocketmq-consume-demo
+  rocketmq:
+    name-server: 127.0.0.1:9876;127.0.0.1:9875
+logging:
+  level: {org.rocketmq.starter: info,org.springframework: info, com.aqlu.rocketmq.demo: info}

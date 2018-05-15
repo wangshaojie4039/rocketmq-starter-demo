@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: rocketmq-producer-demo
+  rocketmq:
+    name-server: 172.20.255.109:9876;172.20.255.104:9876
+    producer:
+      group: wang_group
+      #生产者消息发送失败重试次数
+      retry-times-when-send-failed: 3
+logging:
+  level: {org.rocketmq.starter: debug,org.springframework: info}
